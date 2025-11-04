@@ -1,15 +1,8 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
-ul,
-li {
+ul, li {
     margin: 0;
     padding-left: 0;
     list-style: none;
@@ -37,13 +30,13 @@ body {
 }
 
 img {
-    display: block;
-    max-width: 100%;
+	display: block;
+	max-width: 100%;
     height: auto;
 }
 
 .header-container {
-    display: flex;
+     display: flex;
     width: 1158px;
     margin: 0 auto;
     padding-top: 24px;
@@ -95,8 +88,7 @@ img {
     gap: 40px;
 }
 
-.link:hover,
-.link:focus {
+.link:hover, .link:focus {
     color: #404BBF;
 }
 
@@ -122,8 +114,7 @@ img {
     font-style: normal;
 }
 
-.address-link:hover,
-.address-link:focus {
+.address-link:hover, .address-link:focus {
     color: #404BBF;
 }
 
@@ -167,22 +158,21 @@ img {
     height: 56px;
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
     background-color: #404BBF;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 .benefits-section {
@@ -288,7 +278,7 @@ img {
     font-style: bold;
     background-color: #FFFFFF;
     letter-spacing: 0.02em;
-}
+}  
 
 .portfolio-list {
     display: flex;
