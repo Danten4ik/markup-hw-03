@@ -37,11 +37,11 @@ img {
 
 .header-container {
      display: flex;
-    width: 1158px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     align-items: center;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -92,11 +92,28 @@ img {
     color: #404BBF;
 }
 
+.link1 {
+    display: block;
+    color: #404bbf;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link1::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+}
+
 .link {
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: block;
     color: #2E2F42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list {
@@ -112,6 +129,7 @@ img {
     background-color: #FFFFFF;
     letter-spacing: 0.02em;
     font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover, .address-link:focus {
@@ -122,6 +140,11 @@ img {
     background-color: #2E2F42;
     padding-bottom: 188px;
     padding-top: 188px;
+    max-width: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/background-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .hero-container {
@@ -137,7 +160,6 @@ img {
     line-height: 1.07;
     color: #FFFFFF;
     font-style: bold;
-    background-color: #2E2F42;
     letter-spacing: 0.02em;
     margin-bottom: 48px;
     max-width: 496px;
@@ -156,6 +178,7 @@ img {
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover, .button:focus {
@@ -189,6 +212,17 @@ overflow: hidden;
     gap: 24px;
 }
 
+.benefits-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    border: solid 1px #8e8f99;
+    margin-bottom: 8px;
+}
+
 .benefits-text {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -217,9 +251,34 @@ overflow: hidden;
     display: flex;
     gap: 24px;
     justify-content: center;
-    flex-wrap: wrap;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-social-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-social-li {
+    width: 40px;
+    height: 40px;
+}
+
+.team-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+.team-social-link:hover, .team-social-link:focus {
+    background-color: #404BBF;
 }
 
 .team-title {
@@ -278,7 +337,11 @@ overflow: hidden;
     font-style: bold;
     background-color: #FFFFFF;
     letter-spacing: 0.02em;
-}  
+}
+
+.portfolio-li {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .portfolio-list {
     display: flex;
@@ -320,6 +383,11 @@ overflow: hidden;
     padding-bottom: 100px;
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
@@ -355,3 +423,4 @@ overflow: hidden;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
